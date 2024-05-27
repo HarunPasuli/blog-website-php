@@ -1,0 +1,79 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 3.4rem;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content input[type=text] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #copy-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #copy-btn:hover {
+    background-color: #3e8e41;
+  }
+
+  .share-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .share-link .modal-btn {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+  }
+  
+  .share-link:hover .modal-btn {
+    display: block;
+  }
+
+  #share-buttons {
+    padding-top: 1rem;
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* .share-link .modal-btn {
+      top: calc(100% + 10px);
+      transform: translate(-50%, 0);
+    } */
+    .modal-content {
+        margin-top: 15rem;
+    }
+
+    .modal{ 
+      margin-top: 3.4rem;
+    }
+  }

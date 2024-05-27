@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-color: #1a1a21;
+    --second-color: #fd8f44;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+
+/* Dropdown Button */
+/* .dropbtn {
+    background: var(--second-color);
+    color: var(--bg-color);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  } */
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 7px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #FF7700;}
+
+  .dropdown form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px 0;
+  }
+  
+  .dropdown input[type="text"] {
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 100%;
+    background: none;
+    color: var(--text-color);
+  }
+  
+  .dropdown button[type="submit"] {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  /* .dropdown button[type="submit"]:hover {
+    transform: scale(1.2);
+  } */
+
+  /* button[name="submit-search"] {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  button[name="submit-search"] i {
+    font-size: 1.2rem;
+  } */

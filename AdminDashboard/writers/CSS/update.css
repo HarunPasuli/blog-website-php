@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 5px;
+  background-color: transparent;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 40px 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+
+.file-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #34495e;
+}
+
+.img-preview {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px;
+  }
+  
+  .form-control {
+    font-size: 14px;
+  }
+  
+  .file-upload {
+    font-size: 14px;
+  }
+  
+  .img-preview {
+    max-width: 100%;
+  }
+}
